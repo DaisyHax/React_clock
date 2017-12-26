@@ -21,23 +21,23 @@ class App extends Component {
             <div>
                 <div>
                     <nav className="navbar navbar-light heading">
-                        <h1 className="navbar-brand mb-0">TIMER</h1>
+                        <h1 className="navbar-brand mb-0 h">TIMER</h1>
                     </nav>
                 </div>
                 <div className="row term_card">
-                    <div className="card">
-                        <h3 className="card-header">{this.state.term}</h3>
+                    <div className="card div_card">
+                        <h3 className="card-header h3">{this.state.term}</h3>
                     </div>
                 </div>
 
                 <div className="row">
-                    <div className="card col-6">
+                    <div className="card dec">
                         <div>
                         <DecButton term={this.state.term}
                                    termtodec={this.currentTerm.bind(this)}/>
                         </div>
                     </div>
-                    <div className="card col-6">
+                    <div className="card inc">
                         <div>
                         <IncButton term={this.state.term}
                                    termtoinc={this.currentTerm.bind(this)}/>

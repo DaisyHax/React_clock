@@ -1,14 +1,24 @@
 .body{
-    background-color: darkslateblue;
     text-align: center;
 }
 
 .heading{
-    background-color: lightyellow;
+    background-color: #AA1A00;
 }
 
 .term_card{
-    text-align: center;
     margin: 30px;
+    
+}
+.div_card{
+    margin-left: 540px;
+    font-style: italic;
+}
 
+.dec{
+    margin-left: 520px;
+}
+
+.inc{
+    margin-left: 40px;
 }
