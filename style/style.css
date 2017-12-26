@@ -1,33 +1,14 @@
-.search-bar {
-    margin: 20px;
+.body{
+    background-color: darkslateblue;
     text-align: center;
 }
 
-.search-bar input {
-    width: 75%;
+.heading{
+    background-color: lightyellow;
 }
 
-.video-item img {
-    max-width: 64px;
+.term_card{
+    text-align: center;
+    margin: 30px;
+
 }
-
-.video-detail .details {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.list-group-item {
-    cursor: pointer;
-}
-
-.list-group-item:hover {
-    background-color: #eee;
-}
-
-
-
-
-
-
