@@ -16,9 +16,15 @@
 }
 
 .dec{
-    margin-left: 520px;
+    margin-left: 20px;
 }
 
 .inc{
     margin-left: 40px;
+}
+.dec_hr{
+    margin-left: 450px;
+}
+.inc_hr{
+    margin-left: 20px;
 }

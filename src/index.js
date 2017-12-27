@@ -3,16 +3,26 @@ import ReactDOM from 'react-dom'
 
 import DecButton from "./components/dec_button";
 import IncButton from "./components/inc_button";
+import DecHour from "./components/dec_hr";
+import IncHour from "./components/inc_hr";
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            term: 4
+            term: 0
         };
     }
 
     currentTerm(term) {
+        if(term<0)
+        {
+            term=0;
+        }
+        if(term>100)
+        {
+            term=100;
+        }
         this.setState({term});
     }
 
@@ -31,6 +41,12 @@ class App extends Component {
                 </div>
 
                 <div className="row">
+                    <div className="card dec_hr">
+                        <div>
+                            <DecHour term={this.state.term}
+                                       termtodec={this.currentTerm.bind(this)}/>
+                        </div>
+                    </div>
                     <div className="card dec">
                         <div>
                         <DecButton term={this.state.term}
@@ -41,6 +57,12 @@ class App extends Component {
                         <div>
                         <IncButton term={this.state.term}
                                    termtoinc={this.currentTerm.bind(this)}/>
+                        </div>
+                    </div>
+                    <div className="card inc_hr">
+                        <div>
+                            <IncHour term={this.state.term}
+                                       termtoinc={this.currentTerm.bind(this)}/>
                         </div>
                     </div>
                 </div>
